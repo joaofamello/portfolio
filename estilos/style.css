@@ -14,6 +14,7 @@
 
 html, body {
     background-color: #111111;
+    background-image: url(../imagens/);
 }
 
 header {
@@ -21,10 +22,14 @@ header {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
 }
 
+section {
+    margin: 40px;
+}
+
 section#apresentacao {
     color: white;
     font-family: var(--fontepadrao);
-    padding: 400px 0px 10px 20px;
+    padding: 400px 0px 400px 20px;
 }
 
 section#apresentacao > h1 {
@@ -32,16 +37,18 @@ section#apresentacao > h1 {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.582);
 }
 
+section#apresentacao > p {
+    font-size: 2vw;
+}
+
 section.img1 {
-    background-image: url(../imagens/imagemnotebookG.jpg);
     background-position: right center;
     background-size: cover;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.788);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
 }
 
 nav {
-    padding-top: 15px;
-    padding-left: 10px;
+    padding: 15px;
     background-color: #111111;
 }
 
@@ -53,30 +60,37 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(0, 0, 0, 0.226);
     color: white;
+    font-weight: bold;
     border-radius: 10px;
 }
 
 main {
     font-family: var(--fontepadrao);
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-main h2 {
+h2 {
     color: white;
 }
 
-main p {
+section#sobremim > h2 {
+    text-align: center;
+}
+
+section#sobremim > p {
     text-align: center;
     margin: auto;
     max-width: 800px;
 }
 
 h2.gradiente {
-    background-image: linear-gradient(to right, black, #190C37, #712B9B, #DC84D2, transparent 80%);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    background-color: black;
+    margin: auto;
+    max-width: 840px;
     padding: 10px 0px 10px 20px;
+    border-radius: 0px 15px 0px 0px;
 }
 
 p.destaque {
@@ -84,6 +98,6 @@ p.destaque {
     background-color: rgba(0, 0, 0, 0.377);
     padding: 30px;
     font-size: 1.3em;
-    border-radius: 10px;
-    border: 1px solid rgb(63, 63, 63);
+    border-radius: 0px 0px 0px 15px;
+
 }
