@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=VT323&display=swap');
+
+:root {
+    --cor1: #6cd2e2;
+    --cor2: #03d0f0;
+    --cor3: #02a8c2;
+    --cor4: #016777;
+    --cor5: #0a1f22;
+
+    --fontedestaque: 'VT323', monospace;
+    --fontecomum: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4) 80%);
+}
+
+header {
+    background-color: #0a1f22;
+    padding-top: 250px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+p {
+    font-family: var(--fontecomum);
+}
+
+header h1 {
+    font-family: var(--fontedestaque);
+    font-size: 10vw;
+    text-shadow: 5px 3px 1px rgba(0, 0, 0, 0.637);
+    color: rgb(214, 214, 214);
+}
+
+header p {
+    color: var(--cor1);
+    font-family: monospace;
+    font-size: 2.3vw;
+}
+
+nav > h1 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(0, 0, 0);
+    margin-top: 3px;
+}
+
+h2 {
+    color: var(--cor5);
+    font-weight: normal;
+    padding-left: 4em;
+    font-size: 2.3em;
+    background-image: linear-gradient(to right, var(--cor4), var(--cor1), transparent 50%);
+    font-family: var(--fontedestaque);
+}
+
+main p {
+    color: white;
+    font-size: 1.1em;
+    padding-bottom: 50vh;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.8em;
+    padding-top: 1em;
+    max-width: 500px;
+    min-width: 400px;
+}
