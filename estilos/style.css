@@ -1,15 +1,10 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 :root {
-    --corfonte: #707175;
-    --corfundo: #111111;
-    --cor1: #776AA6;
-    --cor2: #886BF2;
-    --cor3: #1D0C59;
-
-    --fontepadrao: 'Archivo', sans-serif;
+    --fontepadrao:'DM Sans', sans-serif;
 }
 
 * {
@@ -17,3 +12,78 @@
     padding: 0px;
 }
 
+html, body {
+    background-color: #111111;
+}
+
+header {
+    background-color: black;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+}
+
+section#apresentacao {
+    color: white;
+    font-family: var(--fontepadrao);
+    padding: 400px 0px 10px 20px;
+}
+
+section#apresentacao > h1 {
+    font-size: 5vw;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.582);
+}
+
+section.img1 {
+    background-image: url(../imagens/imagemnotebookG.jpg);
+    background-position: right center;
+    background-size: cover;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.788);
+}
+
+nav {
+    padding-top: 15px;
+    padding-left: 10px;
+    background-color: #111111;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: var(--fontepadrao);
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.226);
+    color: white;
+    border-radius: 10px;
+}
+
+main {
+    font-family: var(--fontepadrao);
+}
+
+main h2 {
+    color: white;
+}
+
+main p {
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+}
+
+h2.gradiente {
+    background-image: linear-gradient(to right, black, #190C37, #712B9B, #DC84D2, transparent 80%);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px 0px 10px 20px;
+}
+
+p.destaque {
+    color: rgb(209, 209, 209);
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 30px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border: 1px solid rgb(63, 63, 63);
+}
