@@ -12,6 +12,22 @@
     padding: 0px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #88888850;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     background-color: #111111;
 
@@ -20,38 +36,34 @@ html, body {
 header {
     background-color: black;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
-    position: relative;
 }
 
 section {
-    margin: 40px;
+    padding: 50px;
 }
 
 section#apresentacao {
     color: white;
     font-family: var(--fontepadrao);
-    padding: 400px 0px 400px 20px;
+    padding: 400px 0px 10px 10px;
+    margin: 0px;
 }
 
 section#apresentacao > h1 {
-    font-size: 5vw;
+    font-size: 2em;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.582);
 }
 
 section#apresentacao > p {
-    font-size: 2vw;
+    font-size: 1em;
 }
 
-section.img1 {
-    background-position: right center;
-    background-size: cover;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
-}
 
 nav {
+    width: 100%;
     padding: 15px;
     background-color: #111111;
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
@@ -75,37 +87,30 @@ main {
     margin-bottom: 40px;
 }
 
-h2 {
-    color: white;
+section.conteudogeral {
     text-align: center;
-}
-
-section.quadros > p {
-    text-align: center;
-    margin: auto;
-    max-width: 800px;
+    max-width: 1000px;
+    min-width: 400px;
 }
 
 h2.subtitulo {
     background-color: black;
-    margin: auto;
-    max-width: 840px;
-    padding: 10px 0px 10px 20px;
+    max-width: 1000px;
+    padding: 10px 10px 10px 20px;
     border-radius: 0px 15px 0px 0px;
+    color: white;
+    text-align: center;
 }
 
 p.destaque {
-    color: rgb(209, 209, 209);
-    background-color: rgba(0, 0, 0, 0.377);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     padding: 30px;
     font-size: 1.3em;
     border-radius: 0px 0px 0px 15px;
 
 }
 
-div.quadrinho img {
-    display: inline-block;
-    padding: 10px;
-    width: 100px;
-    height: 100px;
+h2.sub {
+    font-size: 1.3em;
 }
