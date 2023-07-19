@@ -1,116 +1,183 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-
 :root {
-    --fontepadrao:'DM Sans', sans-serif;
+    /* fundo escuro */
+    --cordefundoescuro: #311D3F;
+    
+    /* sub-fundo */
+    --cordesubfundoescuro: #522546;
+
+
+    /* cores dos elementos */
+    --cor1: #88304E;
+    --cor2: #E23E57;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
 
-::-webkit-scrollbar {
-    width: 8px;
-}
 
-::-webkit-scrollbar-track {
-    background-color: transparent;
+/* ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #88888850;
+    background-color: black;
 }
 
-html {
+::-webkit-scrollbar-track-piece {
+    background-image: none;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     scroll-behavior: smooth;
 }
 
-html, body {
-    background-color: #111111;
+nav {
+    /* background-color: rgba(0, 0, 0, 0.342); */
+    padding: 50px 0px;
 
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    text-align: center;
+    width: 100%;
+}
+
+nav > a {
+    padding: 5px 10px;
+    color: var(--cor2);
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: .3s ease-out;
+}
+
+nav.rolagem {
+    background-color: black;
+    padding: 20px 0px;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    /* border: 2px solid var(--cor1); */
+    color: black;
+    transition: .3s ease-in;
 }
 
 header {
-    background-color: black;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    background-image: url(../imagens/imagemnotebookG.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 500px 0px 300px 15px;
 }
 
-section {
-    padding: 50px;
-}
-
-section#apresentacao {
+header > h1 {
     color: white;
-    font-family: var(--fontepadrao);
-    padding: 400px 0px 10px 10px;
-    margin: 0px;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.541);
 }
 
-section#apresentacao > h1 {
-    font-size: 2em;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.582);
-}
-
-section#apresentacao > p {
-    font-size: 1em;
-}
-
-
-nav {
-    width: 100%;
-    padding: 15px;
-    background-color: #111111;
-    position: fixed;
-    top: 0;
-}
-
-nav a {
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: var(--fontepadrao);
+header > p {
+    color: white;
     font-size: 14px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.534);
 }
 
-nav a:hover {
-    color: white;
-    font-weight: bold;
+header > button#botao1 {
+    background-color: transparent;
     border-radius: 10px;
+    border: 1px solid var(--cor2);
+    color: var(--cor2);
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.589);
+    transition: .3s ease-out;
 }
 
-main {
-    font-family: var(--fontepadrao);
-    margin-top: 40px;
-    margin-bottom: 40px;
+header > button#botao1:hover {
+    background-color: var(--cor2);
+    color: black;
+    transition: .3s ease-in;
 }
 
-section.conteudogeral {
-    text-align: center;
-    max-width: 1000px;
-    min-width: 400px;
+header > button#botao2 {
+    background-color: var(--cor2);
+    border-radius: 10px;
+    border: 1px solid var(--cor2);
+    color: var(--cordefundoescuro);
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.589);
+    transition: .3s ease-out;
 }
 
-h2.subtitulo {
-    background-color: black;
-    max-width: 1000px;
-    padding: 10px 10px 10px 20px;
-    border-radius: 0px 15px 0px 0px;
+header > button#botao2:hover {
+    background-color: transparent;
     color: white;
+    font-weight: bolder;
+    transition: .3s ease-in;
+}
+
+span.destaque {
+    color: #311D3F;
+}
+
+section#sobremim {
+    text-align: center;
+    margin: 45px
+}
+
+section#sobremim > h2 {
+    margin-bottom: 20px;
+}
+
+section#sobremim > p {
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    border: 1px solid rgb(153, 153, 153);
+    background-color: rgba(221, 221, 221, 0.63);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.466);
+}
+
+section#habilidades, section#projetosp, section#contato {
+    margin: 45px 0px;
+    padding: 20px 0px;
     text-align: center;
 }
 
-p.destaque {
-    color: rgb(0, 0, 0);
+section#habilidades > div#quadros {
     background-color: rgb(255, 255, 255);
-    padding: 30px;
-    font-size: 1.3em;
-    border-radius: 0px 0px 0px 15px;
-
+    width: 90%;
+    height: 500px;
+    margin: 20px;
 }
 
-h2.sub {
-    font-size: 1.3em;
+section#projetosp, section#todos > h2 {
+    text-align: center;
 }
+
+section#projetosp, section#todos > div.imagens {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 500px;
+    margin: 20px;
+}
+
+section#todos > h2#suave {
+    font-weight: normal;
+    color: rgb(56, 56, 56);
+}
+

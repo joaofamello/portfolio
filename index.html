@@ -3,43 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | João Francisco</title>
+    <title>João Francisco | Portfólio</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#apresentacao">Home</a>
+    <header class="home">
+        <nav id="header">
+            <a href=".home">Home</a>
             <a href="#sobremim">Sobre mim</a>
             <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#">Contato</a>
+            <a href="#projetosp">Projetos</a>
+            <a href="#contato">Contato</a>
         </nav>
-        <section id="apresentacao" class="img1">
-            <h1>Olá, Mundo! <br>Me chamo <strong>João Francisco</strong> :) </h1>
-            <p>Futuro Desenvolvedor Front-End</p>
-        </section>
+        <h1>Olá, me chamo<br><span class="destaque">João Francisco</span></h1>
+        <p>Desenvolvedor Front-End</p>
+        <button id="botao1">Entrar em contato</button>
+        <button id="botao2">Download CV</button>
     </header>
     <main>
-        <section class="conteudogeral" id="sobremim" >
-            <h2 class="subtitulo">Sobre mim</h2>
-            <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vitae necessitatibus voluptates possimus magni quam explicabo et. Voluptates, facere rem dolore fuga, itaque tempora obcaecati distinctio veritatis deserunt ea praesentium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt dolorem iste, rem tenetur veniam similique exercitationem aut reiciendis sequi culpa, numquam voluptas illum obcaecati amet incidunt harum eaque reprehenderit atque?</p>
+        <section id="sobremim">
+            <h2>Sobre mim</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt, hic dolore consequatur minus tenetur fuga laudantium similique quae explicabo pariatur nesciunt quisquam totam placeat voluptatum inventore sequi rerum enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores recusandae repellendus, expedita dignissimos culpa quis sit, perferendis delectus blanditiis tempora quia, molestiae ipsa ab deserunt aliquam vitae dolor. Magnam, dignissimos?</p>
         </section>
-        <section class="conteudogeral" id="habilidades">
-            <h2 class="subtitulo">Habilidades</h2>
-            <p class="destaque">
 
-            </p>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div id="quadros">
+                <div class="q"></div>
+                <div class="q"></div>
+                <div class="q"></div>
+            </div>
         </section>
-        <section id="projetos">
-            <h2 class="sub">Projetos</h2>
+
+        <section id="projetosp">
+            <h2>Projetos principais</h2>
+            <div class="imagens">
+
+            </div>
         </section>
-        <section class="pp">
-            <h3>Projetos principais</h3>
+
+        <section id="todos">
+            <h2 id="suave">______________ Todos os projetos ______________</h2>
+            <div class="imagens">
+
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="icones">
+
+            </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
+    <script src="menu.js"></script>
 </body>
 </html>
