@@ -89,6 +89,12 @@ header > p {
     color: white;
     font-size: 14px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.534);
+    border-left: 4px solid var(--cor2);
+    padding-left: 2px;
+    padding-bottom: 1px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 161px;
 }
 
 header > button#botao1 {
@@ -131,12 +137,12 @@ header > button#botao2:hover {
 }
 
 span.destaque {
-    color: #311D3F;
+    color: var(--cor2);
 }
 
 section#sobremim {
     text-align: center;
-    margin: 45px
+    margin: 45px;
 }
 
 section#sobremim > h2 {
