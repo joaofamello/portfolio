@@ -63,6 +63,7 @@ nav > a {
 nav.rolagem {
     background-color: black;
     padding: 20px 0px;
+    transition: .2s;
 }
 
 nav > a:hover {
@@ -136,13 +137,18 @@ header > button#botao2:hover {
     transition: .3s ease-in;
 }
 
+main {
+    margin: auto;
+    margin-top: 45px;
+    width: 400px;
+}
+
 span.destaque {
     color: var(--cor2);
 }
 
 section#sobremim {
     text-align: center;
-    margin: 45px;
 }
 
 section#sobremim > h2 {
